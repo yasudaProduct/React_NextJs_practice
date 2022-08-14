@@ -5,8 +5,12 @@ import './index.css';
 import Hello from './components/Hello';
 import Name from './components/Name';
 import Message from './components/Message';
-import Parent from './components/ComtainerSample';
+//import Parent from './components/ComtainerSample';
 import ComtextSample from './components/ComtextSample';
+//import { Parent } from './components/Parent';
+import { Parent } from './components/UseCallbackSample';
+import { UseMemoSample } from './components/UseMemoSample';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -17,8 +21,10 @@ root.render(
     <Hello />
     <Name />
     <Message />
-    <Parent />
+    {/* <Parent /> */}
     <ComtextSample />
+    <Parent />
+    <UseMemoSample />
   </React.StrictMode>
 );
 
