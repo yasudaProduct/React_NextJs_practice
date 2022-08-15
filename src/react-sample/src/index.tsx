@@ -8,8 +8,11 @@ import Message from './components/Message';
 //import Parent from './components/ComtainerSample';
 import ComtextSample from './components/ComtextSample';
 //import { Parent } from './components/Parent';
-import { Parent } from './components/UseCallbackSample';
+//import { Parent } from './components/UseCallbackSample';
 import { UseMemoSample } from './components/UseMemoSample';
+import { Clock } from './components/Clock';
+import Parent from './components/useContext';
+
 
 import reportWebVitals from './reportWebVitals';
 
@@ -25,6 +28,7 @@ root.render(
     <ComtextSample />
     <Parent />
     <UseMemoSample />
+    <Clock />
   </React.StrictMode>
 );
 
