@@ -12,8 +12,8 @@ import ComtextSample from './components/ComtextSample';
 import { UseMemoSample } from './components/UseMemoSample';
 import { Clock } from './components/Clock';
 import Parent from './components/useContext';
-
-
+import ImageUploader from './components/ImageUploader';
+import { Input } from './components/Input';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -29,7 +29,10 @@ root.render(
     <Parent />
     <UseMemoSample />
     <Clock />
-  </React.StrictMode>
+    <ImageUploader />
+    <hr />
+    <Input />
+  </React.StrictMode >
 );
 
 // If you want to start measuring performance in your app, pass a function
