@@ -15,4 +15,4 @@ services:
     working_dir: /app/next-sample
 
     #command: npm run start
-    command: npm run dev
+    #command: npm run dev
