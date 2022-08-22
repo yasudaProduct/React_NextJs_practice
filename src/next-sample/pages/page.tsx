@@ -1,5 +1,26 @@
 import { NextPage } from "next";
+import Link, { LinkProps } from "next/link";
 import styled, { css } from "styled-components";
+
+type BaseLinkProps = React.PropsWithChildren<LinkProps> & {
+    className?: string
+    children: React.ReactNode
+}
+
+//Next.jsのリンクにスタイルを適応するための
+const BaseLink = (props: BaseLinkProps) => {
+    const { className, children, ...rest } = props
+    return (
+        <Link{...rest}>
+            <a className={className}>{children}</a>
+        </Link>
+    )
+}
+
+const StyledLink = styled(BaseLink)`
+    color: #1e90ff;
+    font-size: 2em;
+`
 
 //青いボールド文字を表示するコンポーネント
 const Text1 = styled.p`
@@ -87,7 +108,9 @@ const Page: NextPage = () => {
             <br />
             <Text1>Hello</Text1>
             <BorderedText>World</BorderedText>
-
+            <Text as="a" href="/" >Go to Index</Text>
+            <br />
+            <StyledLink href="/">Go to Index</StyledLink>
         </div>
     )
 }
