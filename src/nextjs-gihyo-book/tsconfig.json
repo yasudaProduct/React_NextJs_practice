@@ -13,8 +13,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "baseUrl": "src" //baseUrlオプションにsrcを指定し、基準となるディレクトリをsrcに変更
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "src/**/*.ts", "src/**/*.tsx"], //includeオプションにsrcを指定し、コンパイル対象とします。
   "exclude": ["node_modules"]
 }
